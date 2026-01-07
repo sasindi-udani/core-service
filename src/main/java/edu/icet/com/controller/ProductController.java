@@ -10,9 +10,10 @@ import java.util.ArrayList;
 public class ProductController {
 
     @GetMapping("/get-products")
-    public void getProducts(){
+    public ArrayList<Product> getProducts(){
         ProductService service = new ProductService();
         ArrayList<Product> products =  service.getProducts();
         System.out.println(products);
+        return products;
     }
 }
