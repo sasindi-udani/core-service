@@ -13,7 +13,6 @@ public class ProductController {
     public ArrayList<Product> getProducts(){
         ProductService service = new ProductService();
         ArrayList<Product> products =  service.getProducts();
-        System.out.println(products);
         return products;
     }
 }
